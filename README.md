@@ -1,2 +1,3 @@
 # nextjs-i18n-boilerplate
+
 My implementation of nextjs using i18n, mobx, express, helmetjs and so on...
