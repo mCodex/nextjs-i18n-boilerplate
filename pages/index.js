@@ -9,8 +9,6 @@ import Home from './Home';
 
 import Header from '../components/Header';
 
-import i18n from '../lib/i18n';
-
 export default class App extends React.Component {
   static getInitialProps({ req }) {
     const locale = req.lang;

@@ -16,7 +16,7 @@ class Header extends React.Component {
   handleLocaleChange = (lang) => {
     this.props.store.app.locale = lang;
     const cookie = new Cookies();
-    return cookie.set('lang', lang, { path: '/' });
+    return cookie.set('lang', lang, { maxAge: 1000 * 60 * 60 });
   }
 
   render() {
