@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { inject, observer } from 'mobx-react';
-import { __ } from '../lib/i18n';
+
+import Translate from '../components/Translate';
 
 @inject('store') @observer
 class Home extends React.Component {
@@ -9,7 +10,7 @@ class Home extends React.Component {
     return (
       <div>
         <ul>
-          <li><Link href="/b" as="/a"><a>{__('Hello World')}</a></Link></li>
+          <li><Link href="/b" as="/a"><a><Translate text="Hello World" /></a></Link></li>
           <li><Link href="/a" as="/b"><a>b</a></Link></li>
         </ul>
       </div>

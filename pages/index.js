@@ -4,11 +4,12 @@ import { Provider } from 'mobx-react';
 import { Grid } from 'semantic-ui-react';
 
 import initStore from '../store';
-import i18n from '../lib/i18n';
 
 import Home from './Home';
 
 import Header from '../components/Header';
+
+import i18n from '../lib/i18n';
 
 export default class App extends React.Component {
   static getInitialProps({ req }) {
@@ -23,7 +24,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    i18n.locale = this.store.app.locale;
     return (
       <Provider store={this.store}>
         <div>
