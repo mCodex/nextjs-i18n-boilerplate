@@ -22,12 +22,12 @@ class Header extends React.Component {
   render() {
     return (
       <Grid.Row>
-        <Menu fluid>
+        <Menu inverted fluid>
           <Menu.Item position="right">
-            <Button onClick={() => this.handleLocaleChange('en')}>
+            <Button color="black" onClick={() => this.handleLocaleChange('en')}>
               <Flag name="us" />
             </Button>
-            <Button onClick={() => this.handleLocaleChange('pt')}>
+            <Button color="black" onClick={() => this.handleLocaleChange('pt')}>
               <Flag name="br" />
             </Button>
           </Menu.Item>
